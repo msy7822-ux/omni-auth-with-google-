@@ -21,7 +21,7 @@ jobs:
           ruby-version: 3.0.0
 
       - name: Run bundle install
-        run: bundle install
+        run: bundle install -j4
 
       - name: Setting database
         run: bin/rails db:create RAILS_ENV=test
